@@ -108,7 +108,7 @@ resource "google_compute_backend_service" "dev" {
   name             = "${var.service}"
   protocol         = "HTTP"
   timeout_sec      = 10
-  session_affinity = "NONE"
+  session_affinity = "GENERATED_COOKIE"
 
   backend {
     group = "${google_compute_instance_group_manager.dev.instance_group}"
