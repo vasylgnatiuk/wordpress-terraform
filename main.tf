@@ -99,7 +99,7 @@ resource "google_compute_http_health_check" "dev" {
  check_interval_sec = 5
 
  port = "80"
- request_path     = "/"   
+ request_path     = "/wp-content/index.php"   
 }
 
 
