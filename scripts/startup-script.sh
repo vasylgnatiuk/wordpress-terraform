@@ -9,6 +9,6 @@ chmod +x cloud_sql_proxy
 
 export HOME=/root
 
-git clone https://github.com/vasylgnatiuk/wordpress-lab-cloud-sql.git /wordpress-lab
+git clone https://github.com/vasylgnatiuk/wordpress-ansible.git /wordpress-lab
 
 ansible-playbook /wordpress-lab/playbook.yml
