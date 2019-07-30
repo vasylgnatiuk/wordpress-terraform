@@ -96,7 +96,7 @@ resource "google_compute_http_health_check" "dev" {
  name =  "health-check"
 
  timeout_sec        = 1
- check_interval_sec = 1
+ check_interval_sec = 5
 
  port = "80"
  request_path     = "/"   
